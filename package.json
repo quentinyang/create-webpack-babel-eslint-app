@@ -1,0 +1,43 @@
+{
+  "name": "create-webpack-babel-eslint-app",
+  "version": "1.0.0",
+  "description": "Create an App with webpack and babel and eslint.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js",
+    "lint": "eslint test src packages mock",
+    "lint-fix": "eslint test src packages mock --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quentinyang/create-webpack-babel-eslint-app.git"
+  },
+  "keywords": [],
+  "author": "坤霆 <quentinyang1985@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
